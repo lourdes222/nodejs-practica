@@ -1,0 +1,21 @@
+¿qué es node js? es un entorno de ejecución de javascript fuera del navegador.
+
+¿para qué sirve? lo usamos para crear apis, aplicaciones, etc.
+
+¿qué es npm? es el gestor de paquetes de node js. es donde se publican proyectos para compartir. también nos permite
+ inicializar nuestros proyectos(npm init -y)
+ también instalar y desinstalar módulos de terceros(npm i express)
+
+¿qué es express? es un framework(librería) que nos facilita el uso de node js.
+
+PASOS PARA CREAR UN PROYECTOS 
+1-Creamos carpeta del proyectos
+2-npm init -y ->  inicia el proyecto y crea el archivo package-json
+3-en package.json modificamos type="module" agregamos script start: "node index.js"
+4-npm express -> instalamos express
+5-Creamos un servidor en index.js
+import express from 'express'
+const app = express()
+const port= 3000
+app.listen(port, ()=> {console.log(servidor en puerto${port})}
+)
